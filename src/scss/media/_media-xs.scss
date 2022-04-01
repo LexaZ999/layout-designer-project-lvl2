@@ -14,4 +14,14 @@
   .banner {
     padding-top: 250px;
   }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .low-menu {
+    ul {
+      flex-direction: column;
+    }
+  }
 }
