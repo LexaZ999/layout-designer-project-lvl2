@@ -1,0 +1,39 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+
+  > * {
+    grid-column-end: span 12;
+  }
+}
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1240px
+) !default;
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span #{$i};
+  }
+}
+
+@mixin breakpoint($name, $size) {
+  @media screen and (min-width: #{$size}) {
+    @for $i from 1 through 12 {
+      .col-#{$name}-#{$i} {
+        grid-column: span #{$i};
+      }
+    }
+  }
+}
+
+@for $i from 1 through length($breakpoints) {
+  $name: nth(nth($breakpoints, $i), 1);
+  $size: nth(nth($breakpoints, $i), 2);
+
+  @include breakpoint($name, $size);
+}
