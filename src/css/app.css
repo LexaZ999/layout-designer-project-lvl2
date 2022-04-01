@@ -1,0 +1,530 @@
+@charset "UTF-8";
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class */
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.grid > * {
+  -ms-grid-column-span: 12;
+      grid-column-end: span 12;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+@media screen and (min-width: 576px) {
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+  .col-sm-12 {
+    grid-column: span 12;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .col-md-1 {
+    grid-column: span 1;
+  }
+  .col-md-2 {
+    grid-column: span 2;
+  }
+  .col-md-3 {
+    grid-column: span 3;
+  }
+  .col-md-4 {
+    grid-column: span 4;
+  }
+  .col-md-5 {
+    grid-column: span 5;
+  }
+  .col-md-6 {
+    grid-column: span 6;
+  }
+  .col-md-7 {
+    grid-column: span 7;
+  }
+  .col-md-8 {
+    grid-column: span 8;
+  }
+  .col-md-9 {
+    grid-column: span 9;
+  }
+  .col-md-10 {
+    grid-column: span 10;
+  }
+  .col-md-11 {
+    grid-column: span 11;
+  }
+  .col-md-12 {
+    grid-column: span 12;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .col-xl-1 {
+    grid-column: span 1;
+  }
+  .col-xl-2 {
+    grid-column: span 2;
+  }
+  .col-xl-3 {
+    grid-column: span 3;
+  }
+  .col-xl-4 {
+    grid-column: span 4;
+  }
+  .col-xl-5 {
+    grid-column: span 5;
+  }
+  .col-xl-6 {
+    grid-column: span 6;
+  }
+  .col-xl-7 {
+    grid-column: span 7;
+  }
+  .col-xl-8 {
+    grid-column: span 8;
+  }
+  .col-xl-9 {
+    grid-column: span 9;
+  }
+  .col-xl-10 {
+    grid-column: span 10;
+  }
+  .col-xl-11 {
+    grid-column: span 11;
+  }
+  .col-xl-12 {
+    grid-column: span 12;
+  }
+}
+
+body {
+  color: white;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  background-color: #08020d;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  visibility: hidden;
+}
+
+header {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.name {
+  font-size: 11px;
+  line-height: 16.5px;
+  text-transform: uppercase;
+}
+
+.name a {
+  color: white;
+}
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  line-height: 16.5px;
+  text-transform: uppercase;
+}
+
+.nav li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.nav a {
+  color: #cacaca;
+}
+
+.nav .active {
+  color: white;
+}
+
+.seach-form {
+  width: 100%;
+}
+
+.seach-form input {
+  width: 100%;
+  height: 25px;
+  padding-left: 10px;
+  color: #cacaca;
+  font-size: 13.3px;
+  font-family: inherit;
+  background-color: #3c3b3d;
+  border: none;
+  border-radius: 50px;
+}
+
+.seach-form input::-webkit-input-placeholder {
+  color: #757575;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.seach-form input:-ms-input-placeholder {
+  color: #757575;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.seach-form input::-ms-input-placeholder {
+  color: #757575;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.seach-form input::placeholder {
+  color: #757575;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 200px 0;
+  text-align: center;
+}
+
+.banner h2 {
+  margin-bottom: 31px;
+}
+
+.banner p {
+  margin-bottom: 17px;
+}
+
+.bg-banner {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 570px;
+}
+
+.banner-form input {
+  min-width: 270px;
+  min-height: 50px;
+  margin: 0 px;
+  padding-left: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  background: none;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+}
+
+.banner-form input::-webkit-input-placeholder {
+  color: white;
+}
+
+.banner-form input:-ms-input-placeholder {
+  color: white;
+}
+
+.banner-form input::-ms-input-placeholder {
+  color: white;
+}
+
+.banner-form input::placeholder {
+  color: white;
+}
+
+.banner-form button {
+  width: 100%;
+  padding: 20px 30px;
+  color: white;
+  text-transform: uppercase;
+  background: #34c176;
+  border-radius: 5px;
+}
+
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 575px) {
+  .name {
+    font-weight: bold;
+  }
+  .nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-weight: bold;
+  }
+  .banner {
+    padding-top: 250px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .banner-form input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=app.css.map */

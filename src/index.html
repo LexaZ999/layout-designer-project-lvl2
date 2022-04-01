@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Портал «Music Box» Алексей Зубков</title>
+  <link rel="stylesheet" href="./css/app.css">
 </head>
+
 <body>
-  
+  <header class="wrapper grid">
+    <div class="brand col-xl-2 col-lg-2 col-md-3 col-sm-3">
+      <a href="#"><img class="logo" src="./images/logo.svg" alt="logo"></a>
+      <div class="name"><a href="index.html">Music Box</a></div>
+    </div>
+
+    <nav class="nav col-xl-7 col-lg-7 col-md-6 col-sm-9">
+      <ul>
+        <li><a class="active" href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="artist.html">Исполнители</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="seach-form col-xl-3 col-lg-3 col-md-3 col-sm-12">
+      <form action="#">
+        <label class="visually-hidden" for="seach">Поиск</label>
+        <input type="text" placeholder="поиск..." name="seach" required>
+      </form>
+    </div>
+  </header>
+  <main>
+    <section id="page-description" class="bg-banner">
+      <div class="wrapper">
+        <div class="banner">
+          <h1>Онлайн музыка где угодно</h1>
+          <h2>без ограничений</h2>
+          <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+
+          <form action="#" class="banner-form">
+            <div class="field">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input type="text" placeholder="Имя" name="name" required>
+
+              <label class="visually-hidden" for="seach">Email</label>
+              <input type="email" placeholder="Email" name="email" required>
+            </div>
+
+            <button type="submit">Получить доступ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
 </body>
+
 </html>
