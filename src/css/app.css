@@ -338,6 +338,41 @@ h4 {
   visibility: hidden;
 }
 
+.size-7 {
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.size-3 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.text-small {
+  font-size: 12.8px;
+  line-height: 19.2px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.btn-green {
+  color: white;
+  background: #34c176;
+}
+
+.btn-clean {
+  border: 1px solid white;
+}
+
 header {
   position: absolute;
   top: 25px;
@@ -559,15 +594,6 @@ header {
   color: white;
 }
 
-.banner-form button {
-  width: 100%;
-  padding: 20px 30px;
-  color: white;
-  text-transform: uppercase;
-  background: #34c176;
-  border-radius: 5px;
-}
-
 .field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,6 +602,93 @@ header {
       flex-wrap: wrap;
   gap: 24px;
   margin-bottom: 1.5em;
+}
+
+.pricing-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border-radius: 1rem;
+}
+
+.pricing-item h3 {
+  margin-top: 24px;
+  margin-bottom: 200px;
+}
+
+.pricing-item a:hover {
+  background: #fff3;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.pricing {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.pricing h2 {
+  margin-bottom: 50px;
+}
+
+.bg-free {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standart {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing-value {
+  margin-bottom: 40px;
+}
+
+.pricing-value span {
+  vertical-align: top;
+}
+
+.card-footer {
+  margin: 64px 0;
+}
+
+.pricing-footer {
+  margin-top: 43px;
+  margin-bottom: 83px;
 }
 
 @media screen and (max-width: 575px) {
@@ -626,6 +739,9 @@ header {
   }
   .banner-form input {
     width: 100%;
+  }
+  .pricing-item h3 {
+    margin-top: 16px;
   }
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,76 @@
+.pricing-item {
+
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+
+  border-radius: 1rem;
+
+  h3 {
+    margin-top: 24px;
+    margin-bottom: 200px;
+  }
+
+  a {
+    &:hover {
+      background: #fff3;
+      backdrop-filter: blur(2px);
+    }
+  }
+}
+
+.pricing {
+  padding-top: 100px;
+
+  text-align: center;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+}
+
+.bg-free {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standart {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.pricing-value {
+  margin-bottom: 40px;
+
+  span {
+    vertical-align: top;
+  }
+}
+
+.card-footer {
+  margin: 64px 0;
+}
+
+.pricing-footer {
+  margin-top: 43px;
+  margin-bottom: 83px;
+}
