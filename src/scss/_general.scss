@@ -86,6 +86,11 @@ h4 {
   padding: 20px 30px;
 
   border-radius: 5px;
+
+  &:hover {
+    background: #fff3;
+    backdrop-filter: blur(2px);
+  }
 }
 
 .btn-green {
@@ -96,4 +101,17 @@ h4 {
 
 .btn-clean {
   border: 1px solid white;
+}
+
+.btn-outline-gray {
+  width: fit-content;
+  padding: 16px 30px;
+
+  color: $dark-gray;
+
+  border: 1px solid $dark-gray;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
