@@ -60,3 +60,40 @@ h4 {
 
   visibility: hidden;
 }
+
+.size-7 {
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.size-3 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.text-small {
+  font-size: 12.8px;
+  line-height: 19.2px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+
+  border-radius: 5px;
+}
+
+.btn-green {
+  color: white;
+
+  background: $green;
+}
+
+.btn-clean {
+  border: 1px solid white;
+}
