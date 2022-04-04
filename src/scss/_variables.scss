@@ -6,3 +6,23 @@ $green: #34c176;
 $orange: #f89202;
 $purple: #5328a1;
 $red: #95390c;
+$colors: (
+  black: $black,
+  gray: $gray,
+  dark-gray: $dark-gray,
+  dark: $dark,
+  green: $green,
+  orange: $orange,
+  purple: $purple,
+  red: $red,
+);
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+
+  .#{$name} {
+    color: $color;
+  }
+}
