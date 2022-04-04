@@ -1,0 +1,27 @@
+.app-box {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  h2 {
+    margin-bottom: 48px;
+
+    text-align: center;
+  }
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-img {
+  flex: 1 400px;
+}
+
+.app-body {
+  flex: 1 400px;
+
+  p {
+    margin-bottom: 24px;
+  }
+}

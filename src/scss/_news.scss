@@ -33,18 +33,11 @@
 }
 
 .news-img {
-  flex-basis: 400px;
-  flex-grow: 1;
-
-  img {
-    margin-right: auto;
-    margin-left: auto;
-  }
+  flex: 1 400px;
 }
 
 .news-content {
-  flex-basis: 400px;
-  flex-grow: 1;
+  flex: 1 400px;
 
   h3 {
     margin-bottom: 30px;

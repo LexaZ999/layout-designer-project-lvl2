@@ -1,4 +1,68 @@
 @charset "UTF-8";
+.bg-black {
+  background-color: #08020d;
+}
+
+.black {
+  color: #08020d;
+}
+
+.bg-gray {
+  background-color: #e0e0e0;
+}
+
+.gray {
+  color: #e0e0e0;
+}
+
+.bg-dark-gray {
+  background-color: #cacaca;
+}
+
+.dark-gray {
+  color: #cacaca;
+}
+
+.bg-dark {
+  background-color: #3c3b3d;
+}
+
+.dark {
+  color: #3c3b3d;
+}
+
+.bg-green {
+  background-color: #34c176;
+}
+
+.green {
+  color: #34c176;
+}
+
+.bg-orange {
+  background-color: #f89202;
+}
+
+.orange {
+  color: #f89202;
+}
+
+.bg-purple {
+  background-color: #5328a1;
+}
+
+.purple {
+  color: #5328a1;
+}
+
+.bg-red {
+  background-color: #95390c;
+}
+
+.red {
+  color: #95390c;
+}
+
 @font-face {
   font-weight: 400;
   font-family: Roboto;
@@ -388,11 +452,29 @@ h4 {
   border: 1px solid #cacaca;
 }
 
+.btn-rounded {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 16px 40px;
+  border-radius: 32px;
+}
+
+.btn-red {
+  color: white;
+  background: #95390c;
+}
+
 .row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 header {
@@ -742,24 +824,15 @@ header {
 }
 
 .news-img {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.news-img img {
-  margin-right: auto;
-  margin-left: auto;
+      -ms-flex: 1 400px;
+          flex: 1 400px;
 }
 
 .news-content {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1 400px;
+          flex: 1 400px;
 }
 
 .news-content h3 {
@@ -772,6 +845,40 @@ header {
 
 .news-content p {
   margin-bottom: 25px;
+}
+
+.app-box {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.app-box h2 {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.app-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 400px;
+          flex: 1 400px;
+}
+
+.app-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 400px;
+          flex: 1 400px;
+}
+
+.app-body p {
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 575px) {

@@ -112,6 +112,25 @@ h4 {
   border: 1px solid $dark-gray;
 }
 
+.btn-rounded {
+  width: fit-content;
+
+  padding: 16px 40px;
+
+  border-radius: 32px;
+}
+
+.btn-red {
+  color: white;
+
+  background: $red;
+}
+
 .row-reverse {
   flex-direction: row-reverse;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
 }
