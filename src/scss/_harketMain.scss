@@ -1,0 +1,28 @@
+.bg-harket {
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.harket-main {
+  padding: 200px 0;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 48px;
+  }
+
+  a {
+    display: flex;
+    gap: 16px;
+    width: 200px;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}

@@ -93,6 +93,12 @@ h4 {
   }
 }
 
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 .btn-green {
   color: white;
 
@@ -124,6 +130,12 @@ h4 {
   color: white;
 
   background: $red;
+}
+
+.btn-purple {
+  color: white;
+
+  background: $purple;
 }
 
 .row-reverse {
