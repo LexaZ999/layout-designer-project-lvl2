@@ -491,6 +491,18 @@ h4 {
   margin-left: auto;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
 header {
   position: absolute;
   top: 25px;
@@ -924,6 +936,39 @@ header {
 .icon {
   width: 20px;
   height: 20px;
+}
+
+.tracks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px 50px;
+}
+
+.popular-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 400px;
+          flex: 1 400px;
+  gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular-track img {
+  width: 55px;
+  height: 55px;
+}
+
+.track-info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media screen and (max-width: 575px) {
