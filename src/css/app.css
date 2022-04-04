@@ -971,6 +971,24 @@ header {
           flex-grow: 1;
 }
 
+.discography {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px 50px;
+}
+
+.discography-item {
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+}
+
+.discography-item img {
+  margin-bottom: 18px;
+}
+
 @media screen and (max-width: 575px) {
   .name {
     font-weight: bold;
@@ -1028,6 +1046,10 @@ header {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+  }
+  .discography-item {
+    -ms-flex-preferred-size: 137px;
+        flex-basis: 137px;
   }
 }
 /*# sourceMappingURL=app.css.map */
