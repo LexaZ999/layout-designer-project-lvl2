@@ -1,0 +1,13 @@
+.similar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 50px;
+}
+
+.similar-item {
+  flex-basis: 250px;
+
+  img {
+    margin-bottom: 18px;
+  }
+}

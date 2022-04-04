@@ -503,6 +503,14 @@ h4 {
   margin-bottom: 48px;
 }
 
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
 header {
   position: absolute;
   top: 25px;
@@ -989,6 +997,24 @@ header {
   margin-bottom: 18px;
 }
 
+.similar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px 50px;
+}
+
+.similar-item {
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+}
+
+.similar-item img {
+  margin-bottom: 18px;
+}
+
 @media screen and (max-width: 575px) {
   .name {
     font-weight: bold;
@@ -1048,6 +1074,10 @@ header {
     line-height: 24px;
   }
   .discography-item {
+    -ms-flex-preferred-size: 137px;
+        flex-basis: 137px;
+  }
+  .similar-item {
     -ms-flex-preferred-size: 137px;
         flex-basis: 137px;
   }
