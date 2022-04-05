@@ -16,9 +16,7 @@
 }
 
 .bg-banner {
-  background-image: url("../images/banner.png");
-  background-position: center;
-  background-size: cover;
+  @include bg("../images/banner.png");
 }
 
 .banner-form {

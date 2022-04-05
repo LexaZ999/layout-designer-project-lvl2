@@ -3,6 +3,8 @@
 @import "./reset";
 @import "./gridLayout";
 @import "./general";
+@import "./mixin/bg";
+@import "./button";
 @import "./header";
 @import "./footer";
 @import "./banner";
@@ -11,7 +13,6 @@
 @import "./mobilApp";
 @import "./harketMain";
 @import "./popularTrack";
-@import "./discography";
-@import "./similar";
+@import "./cards";
 @import "./media/media-xs";
 @import "./media/media-sm";

@@ -1,7 +1,5 @@
 .bg-harket {
-  background-image: url("../images/Morten Harket.png");
-  background-position: center;
-  background-size: cover;
+  @include bg("../images/Morten Harket.png");
 }
 
 .harket-main {

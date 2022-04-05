@@ -39,28 +39,6 @@ h4 {
   text-transform: uppercase;
 }
 
-.capitalize {
-  text-transform: none;
-}
-
-.capitalize-bold {
-  font-weight: bold;
-  text-transform: none;
-}
-
-.wrapper {
-  max-width: 1240px;
-  margin: 0 auto;
-
-  padding: 0 20px;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  visibility: hidden;
-}
-
 .size-7 {
   font-size: 64px;
   line-height: 64px;
@@ -80,62 +58,29 @@ h4 {
   text-transform: uppercase;
 }
 
-.btn {
-  display: block;
-  width: 100%;
-  padding: 20px 30px;
-
-  border-radius: 5px;
-
-  &:hover {
-    background: #fff3;
-    backdrop-filter: blur(2px);
-  }
+.capitalize {
+  text-transform: none;
 }
 
-.btn-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+.text-center {
+  text-align: center;
 }
 
-.btn-green {
-  color: white;
-
-  background: $green;
+.bold {
+  font-weight: bold;
 }
 
-.btn-clean {
-  border: 1px solid white;
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+
+  padding: 0 20px;
 }
 
-.btn-outline-gray {
-  width: fit-content;
-  padding: 16px 30px;
+.visually-hidden {
+  position: absolute;
 
-  color: $dark-gray;
-
-  border: 1px solid $dark-gray;
-}
-
-.btn-rounded {
-  width: fit-content;
-
-  padding: 16px 40px;
-
-  border-radius: 32px;
-}
-
-.btn-red {
-  color: white;
-
-  background: $red;
-}
-
-.btn-purple {
-  color: white;
-
-  background: $purple;
+  visibility: hidden;
 }
 
 .row-reverse {
@@ -147,14 +92,6 @@ h4 {
   margin-left: auto;
 }
 
-.pt-100 {
-  padding-top: 100px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
 .mb-48 {
   margin-bottom: 48px;
 }
@@ -163,6 +100,6 @@ h4 {
   margin-bottom: 100px;
 }
 
-.text-center {
-  text-align: center;
+.pt-100 {
+  padding-top: 100px;
 }
