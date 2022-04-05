@@ -44,6 +44,10 @@ header {
 
   a {
     color: $dark-gray;
+
+    &:hover {
+      color: white;
+    }
   }
 
   .active {
